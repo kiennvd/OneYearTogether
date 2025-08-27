@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Một Năm Bên Nhau</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="no-select">
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>Một Năm Bên Nhau ❤️</h1>
+            <div class="date-badge">27/08/2024 - 27/08/2025</div>
+        </header>
+        
+        <div class="main-content">
+            <div class="main-frame">
+                <div class="main-image-container" id="mainImageContainer">
+                    <img id="mainImage" class="main-image" src="" alt="Kỷ niệm">
+                </div>
+                <div class="story-container">
+                    <div class="story-title" id="storyTitle">Ngày đầu tiên</div>
+                    <div class="story-text" id="storyText"></div>
+                </div>
+            </div>
+            
+            <div class="gallery-container">
+                <div class="gallery" id="gallery"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn" id="prevBtn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Trước</span>
+            </button>
+            <button class="control-btn" id="toggleBtn">
+                <i class="fas fa-pause"></i>
+                <span>Dừng</span>
+            </button>
+            <button class="control-btn" id="nextBtn">
+                <i class="fas fa-arrow-right"></i>
+                <span>Tiếp</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="music-control" id="musicControl">
+        <i class="fas fa-volume-up"></i>
+</audio>
+    </div>
+    
+    <!-- Modal for enlarged image -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    
+   <audio id="bgMusic" autoplay loop>
+    <source src="/music/phep-mau.mp3" type="audio/mpeg">
+</audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
