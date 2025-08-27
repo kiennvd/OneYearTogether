@@ -1,7 +1,7 @@
 // Danh sách ảnh và câu chuyện
 const memories = [
     {
-        image: "/img/img_kb.png",
+        image: "img/img_kb.png",
         title: "Ngày đặc biệt",
         story: "Ngày đó, chúng ta bắt đầu câu chuyện…"
     },
